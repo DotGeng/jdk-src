@@ -2,7 +2,7 @@
 jdk 源码阅读
 
 # TreeMap 源码阅读
-&emsp;&emsp;TreeMap是用红黑树实现的，插入数据后添加红黑树节点并进行红黑树的调整，删除数据后也同样进行红黑树的调整，查询数据时，不是用hashcode来进行查询，而是使用红黑树查询。TreeMap没有HashMap的扩容机制，所有的数据都存在一棵红黑树上。红黑树的数据节点是封号数据的Entry对象。
+&emsp;&emsp;TreeMap是用红黑树实现的，插入数据后添加红黑树节点并进行红黑树的调整，删除数据后也同样进行红黑树的调整，查询数据时，不是用hashcode来进行查询，而是使用红黑树查询。TreeMap没有HashMap的扩容机制，所有的数据都存在一棵红黑树上。红黑树的数据节点是封装数据的Entry对象。
 ## Entry定义
 ```
 static final class Entry<K,V> implements Map.Entry<K,V> {
